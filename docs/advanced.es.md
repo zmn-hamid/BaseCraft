@@ -43,7 +43,7 @@ MimoCode funciona desde la terminal, pero en Windows funciona mucho mejor dentro
 
 1. Instala MimoCode (sigue las instrucciones oficiales. Mira videos o pregunta a la IA.)
 2. Abre terminal en la carpeta `BaseCraft` (en Windows: Shift + clic derecho → Open in terminal / Open PowerShell here)
-3. Escribe `mimo`
+3. Escribe `mimo` y presiona Enter
 4. Empieza a hablar — MimoCode puede ver tus archivos y trabajar con ellos directamente
 
 **Usando VS Code (recomendado en Windows):**

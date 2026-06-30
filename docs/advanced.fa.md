@@ -37,23 +37,23 @@
 
 ### مثال MimoCode
 
-MimoCode از طریق terminal کار می‌کند، اما در ویندوز داخل [VS Code](https://code.visualstudio.com) بسیار بهتر عمل می‌کند.
+ابزار MimoCode از طریق terminal کار می‌کند، اما در ویندوز داخل [VS Code](https://code.visualstudio.com) بسیار بهتر عمل می‌کند.
 
-**استفاده از terminal:**
+**با استفاده از terminal:**
 
 1. MimoCode را نصب کنید (دستورالعمل‌های رسمی را دنبال کنید. ویدیوها را تماشا کنید یا از AI بپرسید.)
 2. در پوشه `BaseCraft` terminal را باز کنید (در ویندوز: Shift + کلیک راست → Open in terminal / Open PowerShell here)
-3. `mimo` را تایپ کنید
+3. تایپ کنید `mimo` و اینتر بزنید
 4. شروع به صحبت کنید — MimoCode می‌تواند فایل‌هایتان را ببیند و مستقیماً با آنها کار کند
 
-**استفاده از VS Code (توصیه شده در ویندوز):**
+**با استفاده از VS Code (توصیه شده در ویندوز):**
 
-1. [VS Code](https://code.visualstudio.com) را نصب کنید
+1. نرم‌افزار [VS Code](https://code.visualstudio.com) را نصب کنید
 2. افزونه MimoCode را در VS Code نصب کنید (از sidebar > extensions)
-3. VS Code را باز کنید → "File" → "Open Folder" → پوشه `BaseCraft` را انتخاب کنید
+3. نرم‌افزار VS Code را باز کنید → "File" → "Open Folder" → پوشه `BaseCraft` را انتخاب کنید
 4. پنل MimoCode را باز کنید (آیکون sidebar)
 5. تایپ کنید: "همه تصاویر در workspace را در شبکه ترکیب کن"
-6. AI مستقیماً کد را در فایل‌هایتان می‌نویسد و اجرا می‌کند
+6. هوش مصنوعی مستقیماً کد را در فایل‌هایتان می‌نویسد و اجرا می‌کند
 
 > توجه: برای MimoCode یا هر ابزار مشابه دیگر، بهتر است از حالت compose استفاده کنید. در MimoCode، کلید Tab را فشار دهید تا کلمه "Compose" را ببینید.
 

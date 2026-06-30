@@ -235,6 +235,22 @@ When something goes wrong:
 
 ---
 
+## RTL Language Rules
+
+When updating Farsi (or any RTL language) docs:
+
+- **Never start a sentence or paragraph with an English word** — the first visible character sets the text direction for the entire block. If it's English (LTR), the whole paragraph renders left-to-right and the Farsi gets scrambled.
+  - Bad: `Terminal یک روش متنی...` → whole line goes LTR, Farsi is broken
+  - Good: `ترمینال یک روش متنی...` → RTL preserved, English appears naturally mid-sentence
+- **Technical terms** (like `terminal`, `BaseCraft`, `VS Code`) can appear mid-sentence in English — just never at the start.
+- **Headings** must start with a Persian word.
+- **Table cells** count as their own paragraph — first word matters.
+- **List items** count too — after the number/bullet, the first word sets direction.
+- **Code blocks** are exempt — exact commands stay as-is.
+- **List numbers** must be regular Arabic numerals (1, 2, 3) — Farsi/Persian numerals (۱, ۲, ۳) don't render as lists in markdown.
+
+---
+
 ## Project Structure
 
 ```
