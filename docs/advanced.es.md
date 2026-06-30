@@ -2,6 +2,22 @@
 
 > Todo en esta página es para usuarios que quieren más poder y control. Vuelve aquí después de completar el [tutorial básico](basic.es.md).
 
+## ¿Qué es una Terminal?
+
+Una terminal es una forma de texto para controlar tu computadora. Escribes comandos en lugar de hacer clic en botones. La necesitas para instalar BaseCraft y ejecutar algunas tareas.
+
+**Cómo abrirla:**
+
+| SO | Cómo |
+|----|------|
+| **Windows** | Presiona `Windows key + R`, escribe `cmd`, presiona Enter. Se abre una ventana negra. |
+| **Mac** | Presiona `Cmd + Space`, escribe `Terminal`, presiona Enter. |
+| **Linux** | Presiona `Ctrl + Alt + T`. |
+
+Cuando esta guía dice "abre terminal y escribe algo", esto es lo que significa.
+
+> En Windows puedes usar `PowerShell` en su lugar. Puedes abrir ambos buscándolos.
+
 ## Agentes de Codificación: Que la IA Trabaje Directamente en Tus Archivos
 
 Con la [configuración básica](basic.es.md), usas chatbots en línea (ChatGPT, Gemini, Claude web). La IA escribe código, tú lo copias y pegas, lo ejecutas. Funciona, pero es lento y manual.

@@ -2,6 +2,22 @@
 
 > Everything on this page is for users who want more power and control. Come back here after you've completed the [basic tutorial](basic.md).
 
+## What is a Terminal?
+
+A terminal is a text-based way to control your computer. You type commands instead of clicking buttons. You need it for some installation steps and advanced tasks.
+
+**How to open it:**
+
+| OS | How |
+|----|-----|
+| **Windows** | Press `Windows key + R`, type `cmd`, press Enter. A black window opens. |
+| **Mac** | Press `Cmd + Space`, type `Terminal`, press Enter. |
+| **Linux** | Press `Ctrl + Alt + T`. |
+
+When this guide says "open terminal and type something," this is what it means.
+
+> For Windows you can use `PowerShell` instead. You can open both of them by searching too.
+
 ## Coding Agents: Let AI Work Directly on Your Files
 
 With the [basic setup](basic.md), you use online chatbots (ChatGPT, Gemini, Claude web). AI writes code, you copy-paste it, you run it. That works, but it's slow and manual.

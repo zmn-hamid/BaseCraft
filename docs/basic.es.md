@@ -2,22 +2,6 @@
 
 Esta guía te lleva de cero a tu primera tarea automatizada.
 
-## ¿Qué es una Terminal?
-
-Una terminal es una forma de texto para controlar tu computadora. Escribes comandos en lugar de hacer clic en botones. La necesitas para instalar BaseCraft y ejecutar algunas tareas.
-
-**Cómo abrirla:**
-
-| SO | Cómo |
-|----|------|
-| **Windows** | Presiona `Windows key + R`, escribe `cmd`, presiona Enter. Se abre una ventana negra. |
-| **Mac** | Presiona `Cmd + Space`, escribe `Terminal`, presiona Enter. |
-| **Linux** | Presiona `Ctrl + Alt + T`. |
-
-Cuando esta guía dice "abre terminal y escribe algo", esto es lo que significa.
-
-> En Windows puedes usar `PowerShell` en su lugar. Puedes abrir ambos buscándolos.
-
 ## Mostrar Extensiones de Archivo
 
 Necesitas ver las extensiones (como `.py`, `.txt`) para guardar archivos correctamente. Haz esto antes que todo lo demás.
@@ -51,11 +35,13 @@ Cuando un chatbot de IA te dé código para guardar, necesitas un editor de text
 3. Espera a que termine (puede tardar unos minutos)
 
 **Mac/Linux:**
-1. Abre terminal (ver arriba)
+1. Abre terminal
 2. Escribe `cd ` (nota el espacio después) luego arrastra la carpeta `BaseCraft` a la ventana de terminal
 3. Presiona Enter
 4. Escribe `bash install.sh` y presiona Enter
 5. Espera a que termine
+
+> Si no sabes qué es una terminal,Consulta [¿Qué es una Terminal?](advanced.es.md#qué-es-una-terminal) en la guía Avanzada.
 
 ## Paso 3: Subir al Chat de IA
 

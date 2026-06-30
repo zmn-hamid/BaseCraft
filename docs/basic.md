@@ -2,22 +2,6 @@
 
 This guide takes you from zero to your first automated task.
 
-## What is a Terminal?
-
-A terminal is a text-based way to control your computer. You type commands instead of clicking buttons. You need it to install BaseCraft and run some tasks.
-
-**How to open it:**
-
-| OS | How |
-|----|-----|
-| **Windows** | Press `Windows key + R`, type `cmd`, press Enter. A black window opens. |
-| **Mac** | Press `Cmd + Space`, type `Terminal`, press Enter. |
-| **Linux** | Press `Ctrl + Alt + T`. |
-
-When this guide says "open terminal and type something," this is what it means.
-
-> For Windows you can use `PowerShell` instead. You can open both of them by searching too.
-
 ## Show File Extensions
 
 You need to see file extensions (like `.py`, `.txt`) so you can save files correctly. Do this before anything else.
@@ -51,11 +35,13 @@ When an AI chatbot gives you code to save, you need a text editor.
 3. Wait for it to finish (this may take a few minutes)
 
 **Mac/Linux:**
-1. Open terminal (see above)
+1. Open terminal
 2. Type `cd ` (notice the space afterwards) then drag the `BaseCraft` folder into the terminal window
 3. Press Enter
 4. Type `bash install.sh` and press Enter
 5. Wait for it to finish
+
+> If you don't know what terminal is, see [What is a Terminal?](advanced.md#what-is-a-terminal) in the Advanced guide.
 
 ## Step 3: Upload to AI Chat
 
