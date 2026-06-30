@@ -30,9 +30,9 @@ Lo ejecutas
 2. **Instalar** — Abre la carpeta `BaseCraft` → haz doble clic en `install.bat` (o ejecuta `bash install.sh` en Mac/Linux)
 3. **Subir** — Abre un chatbot de IA, sube `AGENTS.md` y `os.txt`, dile a la IA qué quieres
 
-**¿No conoces Terminal o las extensiones de archivo?** Lee la [guía completa de instalación](docs/basic.es.md).
+> **Importante:** Si es tu primera vez, **lee la [guía de Primeros Pasos](docs/basic.es.md) primero.** Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes.
 
-**¿Quieres más poder?** Configura una [herramienta Agent](docs/advanced.es.md) para que la IA trabaje directamente en tus archivos.
+> **¿Quieres una experiencia más fácil?** La [guía Avanzada](docs/advanced.es.md) configura una **herramienta Agent** — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Toma unos minutos configurarlo, pero después cada tarea es mucho más sencilla.
 
 ---
 
@@ -41,7 +41,7 @@ Lo ejecutas
 | Guía | Para quién |
 |------|------------|
 | [Primeros Pasos](docs/basic.es.md) | Usuarios nuevos — conceptos básicos de Terminal, instalación, primera tarea |
-| [Avanzado](docs/advanced.es.md) | Herramientas Agent, consejos, ejemplos |
+| [Avanzado](docs/advanced.es.md) | Herramientas Agent — uso diario más fácil, configuración única |
 
 ---
 

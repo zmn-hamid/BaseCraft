@@ -44,9 +44,8 @@
 
 | ابزار | کاربرد | هزینه |
 |--------|--------|-------|
-| **MimoCode** | دستیار AI برای کدنویسی (افزونه VS Code) | رایگان |
+| **MimoCode** | دستیار AI برای کدنویسی — در terminal یا [VS Code](https://code.visualstudio.com) کار می‌کند | رایگان |
 | **OpenCode** | [OpenCode](https://github.com/opencode-ai/opencode) — ویرایشگر کد با AI | رایگان |
-| **Claude Code** | CLI agent از Anthropic | رایگان با API key |
 | **Hermes** | [Hermes](https://github.com/anthropics/hermes) — فریمورک AI agent | رایگان |
 
 ### نحوه نصب (هر ابزاری)
@@ -59,19 +58,23 @@
 
 ### مثال MimoCode
 
-1. MimoCode را نصب کنید (افزونه VS Code)
-2. VS Code را باز کنید
-3. "File" → "Open Folder" → پوشه `BaseCraft` را انتخاب کنید
-4. پنل MimoCode را باز کنید (معمولاً آیکون sidebar)
+MimoCode از طریق terminal کار می‌کند، اما در ویندوز داخل [VS Code](https://code.visualstudio.com) بسیار بهتر عمل می‌کند.
+
+**استفاده از terminal:**
+
+1. MimoCode را نصب کنید (دستورالعمل‌های رسمی را دنبال کنید)
+2. در پوشه `BaseCraft` terminal را باز کنید
+3. `mimocode` را تایپ کنید
+4. شروع به صحبت کنید — MimoCode می‌تواند فایل‌هایتان را ببیند و مستقیماً با آنها کار کند
+
+**استفاده از VS Code (توصیه شده در ویندوز):**
+
+1. [VS Code](https://code.visualstudio.com) را نصب کنید
+2. افزونه MimoCode را در VS Code نصب کنید
+3. VS Code را باز کنید → "File" → "Open Folder" → پوشه `BaseCraft` را انتخاب کنید
+4. پنل MimoCode را باز کنید (آیکون sidebar)
 5. تایپ کنید: "همه تصاویر در workspace را در شبکه ترکیب کن"
 6. AI مستقیماً کد را در فایل‌هایتان می‌نویسد و اجرا می‌کند
-
-### مثال Claude Code
-
-1. Claude Code را نصب کنید (`npm install -g @anthropic-ai/claude-code`)
-2. در پوشه BaseCraft terminal را باز کنید
-3. `claude` را تایپ کنید
-4. شروع به صحبت کنید — Claude می‌تواند فایل‌هایتان را ببیند و مستقیماً با آنها کار کند
 
 ### یادگیری بیشتر
 

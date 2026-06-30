@@ -30,9 +30,9 @@ Task done!
 2. **Install** — Open the `BaseCraft` folder → double-click `install.bat` (or run `bash install.sh` on Mac/Linux)
 3. **Upload** — Open an AI chatbot, upload `AGENTS.md` and `os.txt`, tell AI what you want
 
-**New to terminals or file extensions?** Read the [full setup guide](docs/basic.md).
+> **Important:** If this is your first time, **read the [Getting Started guide](docs/basic.md) first.** It walks you through everything step by step — how to open a terminal, how to save files, how to run scripts. Don't skip it.
 
-**Want more power?** Set up an [agent tool](docs/advanced.md) so AI works directly on your files.
+> **Want an easier experience?** The [Advanced guide](docs/advanced.md) sets up an **agent tool** — this lets AI work directly on your files. No copy-paste, no saving files manually. It takes a few extra minutes to set up, but after that every task is much simpler.
 
 ---
 
@@ -41,7 +41,7 @@ Task done!
 | Guide | For who |
 |-------|---------|
 | [Getting Started](docs/basic.md) | First-time users — terminal basics, install, first task |
-| [Advanced](docs/advanced.md) | Agent tools, tips, examples |
+| [Advanced](docs/advanced.md) | Agent tools — easier daily use, one-time setup |
 
 ---
 

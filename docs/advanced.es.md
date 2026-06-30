@@ -44,9 +44,8 @@ Esta es la forma más poderosa de usar BaseCraft.
 
 | Herramienta | Qué Hace | Costo |
 |-------------|----------|-------|
-| **MimoCode** | Asistente de IA para código (extensión VS Code) | Gratis |
+| **MimoCode** | Asistente de IA para código — funciona en terminal o [VS Code](https://code.visualstudio.com) | Gratis |
 | **OpenCode** | [OpenCode](https://github.com/opencode-ai/opencode) — Editor de código con IA | Gratis |
-| **Claude Code** | CLI agent de Anthropic | Gratis con API key |
 | **Hermes** | [Hermes](https://github.com/anthropics/hermes) — Framework de AI agent | Gratis |
 
 ### Cómo Configurar (Cualquier Herramienta)
@@ -59,19 +58,23 @@ Eso es todo. Sin paso de subida. Sin copiar y pegar. La IA ya ve tu proyecto.
 
 ### Ejemplo con MimoCode
 
-1. Instala MimoCode (extensión VS Code)
-2. Abre VS Code
-3. Haz clic en "File" → "Open Folder" → selecciona la carpeta `BaseCraft`
-4. Abre el panel de MimoCode (generalmente un ícono en la barra lateral)
+MimoCode funciona desde la terminal, pero en Windows funciona mucho mejor dentro de [VS Code](https://code.visualstudio.com).
+
+**Usando terminal:**
+
+1. Instala MimoCode (sigue las instrucciones oficiales)
+2. Abre terminal en la carpeta `BaseCraft`
+3. Escribe `mimocode`
+4. Empieza a hablar — MimoCode puede ver tus archivos y trabajar con ellos directamente
+
+**Usando VS Code (recomendado en Windows):**
+
+1. Instala [VS Code](https://code.visualstudio.com)
+2. Instala la extensión MimoCode en VS Code
+3. Abre VS Code → "File" → "Open Folder" → selecciona la carpeta `BaseCraft`
+4. Abre el panel de MimoCode (ícono en la barra lateral)
 5. Escribe: "Combina todas las imágenes en workspace en una cuadrícula"
 6. La IA escribe el código directamente en tus archivos y lo ejecuta
-
-### Ejemplo con Claude Code
-
-1. Instala Claude Code (`npm install -g @anthropic-ai/claude-code`)
-2. Abre terminal en la carpeta BaseCraft
-3. Escribe `claude`
-4. Empieza a hablar — Claude puede ver tus archivos y trabajar con ellos directamente
 
 ### Aprende Más
 

@@ -44,9 +44,8 @@ This is the most powerful way to use BaseCraft.
 
 | Tool | What It Does | Cost |
 |------|--------------|------|
-| **MimoCode** | AI coding assistant (VS Code extension) | Free tier available |
+| **MimoCode** | AI coding assistant — works in terminal or [VS Code](https://code.visualstudio.com) | Free tier available |
 | **OpenCode** | [OpenCode](https://github.com/opencode-ai/opencode) — AI-powered code editor | Free tier available |
-| **Claude Code** | Anthropic's CLI agent | Free with API key |
 | **Hermes** | [Hermes](https://github.com/anthropics/hermes) — AI agent framework | Free |
 
 ### How to Set Up (Any Tool)
@@ -59,19 +58,23 @@ That's it. No upload step. No copy-paste. AI already sees your project.
 
 ### MimoCode Example
 
-1. Install MimoCode (VS Code extension)
-2. Open VS Code
-3. Click "File" → "Open Folder" → select the `BaseCraft` folder
-4. Open the MimoCode panel (usually a sidebar icon)
+MimoCode works from the terminal, but on Windows it works much better inside [VS Code](https://code.visualstudio.com).
+
+**Using terminal:**
+
+1. Install MimoCode (follow its official instructions)
+2. Open terminal in the `BaseCraft` folder
+3. Type `mimocode`
+4. Start talking — MimoCode can see your files and work with them directly
+
+**Using VS Code (recommended on Windows):**
+
+1. Install [VS Code](https://code.visualstudio.com)
+2. Install the MimoCode extension in VS Code
+3. Open VS Code → "File" → "Open Folder" → select the `BaseCraft` folder
+4. Open the MimoCode panel (sidebar icon)
 5. Type: "Combine all images in workspace into a grid"
 6. AI writes the code directly to your files and runs it
-
-### Claude Code Example
-
-1. Install Claude Code (`npm install -g @anthropic-ai/claude-code`)
-2. Open terminal in the BaseCraft folder
-3. Type `claude`
-4. Start talking — Claude can see your files and work with them directly
 
 ### Learn More
 
