@@ -45,9 +45,9 @@ This is the most powerful way to use BaseCraft.
 | Tool | What It Does | Cost |
 |------|--------------|------|
 | **MimoCode** | AI coding assistant (VS Code extension) | Free tier available |
-| **OpenCode** | AI-powered code editor | Free tier available |
+| **OpenCode** | [OpenCode](https://github.com/opencode-ai/opencode) — AI-powered code editor | Free tier available |
 | **Claude Code** | Anthropic's CLI agent | Free with API key |
-| **Hermes** | AI agent framework | Free |
+| **Hermes** | [Hermes](https://github.com/anthropics/hermes) — AI agent framework | Free |
 
 ### How to Set Up (Any Tool)
 
@@ -75,6 +75,6 @@ That's it. No upload step. No copy-paste. AI already sees your project.
 
 ### Learn More
 
-These Telegram channels teach AI tools and automation in Persian:
+These Telegram channels teach AI tools and automation (language is Persian/Farsi but you can auto translate in Telegram):
 - [t.me/MatinSenPaii](https://t.me/MatinSenPaii)
 - [t.me/appxa](https://t.me/appxa)

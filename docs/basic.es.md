@@ -67,15 +67,16 @@ Cuando la IA te dé código para guardar, necesitas un editor de texto.
 
 ---
 
-## Paso 3: Crear os.txt
+## Paso 3: os.txt
 
-Este archivo le dice a la IA qué sistema operativo usas.
+Durante la instalación, `os.txt` se creó automáticamente con tu sistema operativo. No necesitas hacer nada aquí.
+
+Si necesitas cambiarlo (por ejemplo, si detectó el sistema operativo incorrecto):
 
 1. Abre la carpeta `BaseCraft`
-2. Haz clic derecho dentro de la carpeta → "New" → "Text Document"
-3. Nómbralo `os.txt` (asegúrate de que no sea `os.txt.txt`)
-4. Ábrelo y escribe exactamente: `windows` (o `linux` o `mac`)
-5. Guarda y cierra
+2. Abre `os.txt` en Notepad
+3. Escribe exactamente: `windows` (o `linux` o `mac`)
+4. Guarda y cierra
 
 ---
 

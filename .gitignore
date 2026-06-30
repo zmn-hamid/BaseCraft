@@ -12,3 +12,7 @@ wheels/
 # User workspace (keep the folder, ignore contents)
 workspace/*
 !workspace/.gitkeep
+
+# Temp files
+temp/
+os.txt

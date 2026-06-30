@@ -24,20 +24,27 @@ else
     echo "  uv installed!"
 fi
 
-# Step 2: Install Python
-echo "[2/3] Checking for Python..."
-if command -v python3 &> /dev/null; then
-    echo "  Python is already installed!"
-else
-    echo "  Installing Python via uv..."
-    uv python install 3.13
-    echo "  Python installed!"
-fi
-
-# Step 3: Install project dependencies
-echo "[3/3] Installing project dependencies..."
+# Step 2: Install project dependencies
+echo "[2/3] Installing project dependencies..."
 uv sync
 echo "  Dependencies installed!"
+
+# Step 3: Create os.txt if it doesn't exist
+echo "[3/3] Detecting operating system..."
+if [ ! -f "os.txt" ]; then
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        echo "mac" > os.txt
+        echo "  Created os.txt (detected: mac)"
+    elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "linux" > os.txt
+        echo "  Created os.txt (detected: linux)"
+    else
+        echo "linux" > os.txt
+        echo "  Created os.txt (detected: linux)"
+    fi
+else
+    echo "  os.txt already exists!"
+fi
 
 echo ""
 echo "========================================"

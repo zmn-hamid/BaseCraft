@@ -45,9 +45,9 @@
 | ابزار | کاربرد | هزینه |
 |--------|--------|-------|
 | **MimoCode** | دستیار AI برای کدنویسی (افزونه VS Code) | رایگان |
-| **OpenCode** | ویرایشگر کد با AI | رایگان |
+| **OpenCode** | [OpenCode](https://github.com/opencode-ai/opencode) — ویرایشگر کد با AI | رایگان |
 | **Claude Code** | CLI agent از Anthropic | رایگان با API key |
-| **Hermes** | فریمورک AI agent | رایگان |
+| **Hermes** | [Hermes](https://github.com/anthropics/hermes) — فریمورک AI agent | رایگان |
 
 ### نحوه نصب (هر ابزاری)
 
@@ -75,6 +75,6 @@
 
 ### یادگیری بیشتر
 
-این کانال‌های تلگرام آموزش ابزارهای AI و اتوماسیون را به فارسی ارائه می‌دهند:
+این کانال‌های تلگرام آموزش ابزارهای AI و اتوماسیون را به فارسی ارائه می‌دهند (زبان فارسی است اما می‌توانید در تلگرام ترجمه خودکار کنید):
 - [t.me/MatinSenPaii](https://t.me/MatinSenPaii)
 - [t.me/appxa](https://t.me/appxa)

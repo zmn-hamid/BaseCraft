@@ -8,11 +8,16 @@ if "%~1"=="" (
     exit /b 1
 )
 
-if not exist "%~1" (
-    echo Error: Script '%~1' not found.
-    exit /b 1
+REM If no path prefix, assume workspace/
+set "script=%~1"
+if not exist "%script%" (
+    if not exist "workspace\%script%" (
+        echo Error: Script '%script%' not found.
+        exit /b 1
+    )
+    set "script=workspace\%script%"
 )
 
-echo Running %~1...
-uv run python "%~1"
+echo Running %script%...
+uv run python "%script%"
 echo Done!

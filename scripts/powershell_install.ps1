@@ -24,21 +24,19 @@ if ($uvInstalled) {
     Write-Host "  uv installed!" -ForegroundColor Green
 }
 
-# Step 2: Install Python
-Write-Host "[2/3] Checking for Python..." -ForegroundColor Yellow
-$pythonInstalled = Get-Command python -ErrorAction SilentlyContinue
-if ($pythonInstalled) {
-    Write-Host "  Python is already installed!" -ForegroundColor Green
-} else {
-    Write-Host "  Installing Python via uv..." -ForegroundColor Yellow
-    uv python install 3.13
-    Write-Host "  Python installed!" -ForegroundColor Green
-}
-
-# Step 3: Install project dependencies
-Write-Host "[3/3] Installing project dependencies..." -ForegroundColor Yellow
+# Step 2: Install project dependencies
+Write-Host "[2/3] Installing project dependencies..." -ForegroundColor Yellow
 uv sync
 Write-Host "  Dependencies installed!" -ForegroundColor Green
+
+# Step 3: Create os.txt if it doesn't exist
+Write-Host "[3/3] Detecting operating system..." -ForegroundColor Yellow
+if (-not (Test-Path "os.txt")) {
+    "windows" | Out-File -FilePath "os.txt" -Encoding utf8 -NoNewline
+    Write-Host "  Created os.txt (detected: windows)" -ForegroundColor Green
+} else {
+    Write-Host "  os.txt already exists!" -ForegroundColor Green
+}
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Green

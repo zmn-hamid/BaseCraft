@@ -67,15 +67,16 @@ When AI gives you code to save, you need a text editor.
 
 ---
 
-## Step 3: Create os.txt
+## Step 3: os.txt
 
-This tells AI which operating system you use.
+During installation, `os.txt` was created automatically with your operating system. You don't need to do anything here.
+
+If you need to change it (for example, if it detected the wrong OS):
 
 1. Open the `BaseCraft` folder
-2. Right-click inside the folder → "New" → "Text Document"
-3. Name it `os.txt` (make sure it's not `os.txt.txt`)
-4. Open it and type exactly: `windows` (or `linux` or `mac`)
-5. Save and close
+2. Open `os.txt` in Notepad
+3. Type exactly: `windows` (or `linux` or `mac`)
+4. Save and close
 
 ---
 

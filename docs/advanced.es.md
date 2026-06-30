@@ -45,9 +45,9 @@ Esta es la forma más poderosa de usar BaseCraft.
 | Herramienta | Qué Hace | Costo |
 |-------------|----------|-------|
 | **MimoCode** | Asistente de IA para código (extensión VS Code) | Gratis |
-| **OpenCode** | Editor de código con IA | Gratis |
+| **OpenCode** | [OpenCode](https://github.com/opencode-ai/opencode) — Editor de código con IA | Gratis |
 | **Claude Code** | CLI agent de Anthropic | Gratis con API key |
-| **Hermes** | Framework de AI agent | Gratis |
+| **Hermes** | [Hermes](https://github.com/anthropics/hermes) — Framework de AI agent | Gratis |
 
 ### Cómo Configurar (Cualquier Herramienta)
 
@@ -75,6 +75,6 @@ Eso es todo. Sin paso de subida. Sin copiar y pegar. La IA ya ve tu proyecto.
 
 ### Aprende Más
 
-Estos canales de Telegram enseñan herramientas de IA y automatización:
+Estos canales de Telegram enseñan herramientas de IA y automatización (el idioma es Persa/Farsi pero puedes traducir automáticamente en Telegram):
 - [t.me/MatinSenPaii](https://t.me/MatinSenPaii)
 - [t.me/appxa](https://t.me/appxa)
