@@ -1,4 +1,18 @@
+<div align="center">
+
 # BaseCraft
+
+**اتوماسیون پایتون برای غیر برنامه‌نویسان**
+
+*فقط به AI بگویید چه می‌خواهید — کد را می‌نویسد، شما اجرا می‌کنید.*
+
+[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](README.md)
+[![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
+[![Español](https://img.shields.io/badge/Español-FF6600?style=flat-square)](README.es.md)
+
+</div>
+
+---
 
 هدف ساده است: کمک به افراد غیر برنامه‌نویس برای اتوماسیون کارهای تکراری. نیازی به دانش برنامه‌نویسی ندارید. فقط به AI بگویید چه می‌خواهید، کد را می‌نویسد، شما اجرا می‌کنید.
 
@@ -44,11 +58,6 @@ AI کد را می‌نویسد
 |--------|-------------|
 | [شروع سریع](docs/basic.fa.md) | کاربران تازه‌کار — مبانی Terminal، نصب، اولین کار |
 | [پیشرفته](docs/advanced.fa.md) | کدنویس‌های هوشمند — استفاده روزانه آسان‌تر، راه‌اندازی یک‌باره |
-
-## ترجمه‌ها
-
-- [English](README.md)
-- [Spanish (Español)](README.es.md)
 
 ## مجوز
 

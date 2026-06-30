@@ -1,4 +1,18 @@
+<div align="center">
+
 # BaseCraft
+
+**Automatización en Python para no programadores**
+
+*Solo dile a la IA qué quieres — ella escribe el código, tú lo ejecutas.*
+
+[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](README.md)
+[![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
+[![Español](https://img.shields.io/badge/Español-FF6600?style=flat-square)](README.es.md)
+
+</div>
+
+---
 
 El objetivo es simple: ayudar a los no programadores a automatizar tareas mundanas. No necesitas conocimientos de programación. Solo dile a la IA qué quieres, ella escribe el código, tú lo ejecutas.
 
@@ -44,11 +58,6 @@ Lo ejecutas
 |------|------------|
 | [Primeros Pasos](docs/basic.es.md) | Usuarios nuevos — conceptos básicos de Terminal, instalación, primera tarea |
 | [Avanzado](docs/advanced.es.md) | Agentes de codificación — uso diario más fácil, configuración única |
-
-## Traducciones
-
-- [English](README.md)
-- [Persian (فارسی)](README.fa.md)
 
 ## Licencia
 

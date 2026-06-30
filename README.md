@@ -1,6 +1,18 @@
+<div align="center">
+
 # BaseCraft
 
-The goal is simple: help non-programmers automate mundane tasks. You don't need any coding knowledge. Just tell AI what you want, it writes the code, you run it.
+**Python automation for non-programmers**
+
+*Just tell AI what you want — it writes the code, you run it.*
+
+[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](README.md)
+[![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
+[![Español](https://img.shields.io/badge/Español-FF6600?style=flat-square)](README.es.md)
+
+</div>
+
+---
 
 BaseCraft is **not** an AI tool. It doesn't compete with Hermes, OpenClaw or anything else. It's a starter project which provides two facilities: helping non-developers vibe-code their basic tasks more **easily** and **reliably**. It has a good foundation for LLMs to understand user input and develop code and programs that are more reliably bug-free. Though, to target average users, I have created a small but thorough tutorial on how to work with this project.
 
@@ -44,11 +56,6 @@ Task done!
 |-------|---------|
 | [Getting Started](docs/basic.md) | First-time users — terminal basics, install, first task |
 | [Advanced](docs/advanced.md) | Coding agents — easier daily use, one-time setup |
-
-## Translations
-
-- [Persian (فارسی)](README.fa.md)
-- [Spanish (Español)](README.es.md)
 
 ## License
 
