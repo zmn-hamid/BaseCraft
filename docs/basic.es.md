@@ -80,6 +80,8 @@ BaseCraft/
 └── README.md           # Este archivo
 ```
 
+> **Nota:** Cuando la IA escribe código para ti, crea `main.py` en la raíz del proyecto (no dentro de `workspace/`). También crea un `run.bat` (Windows) o `run.sh` (Mac/Linux) para que hagas doble clic y lo ejecutes.
+
 ## Consejos para Mejores Resultados
 
 - **Sé específico**: "Redimensiona a 800x600" es mejor que "haz las imágenes más pequeñas"

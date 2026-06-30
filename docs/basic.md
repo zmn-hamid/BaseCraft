@@ -80,6 +80,8 @@ BaseCraft/
 └── README.md           # This file
 ```
 
+> **Note:** When AI writes code for you, it creates `main.py` at the project root (not inside `workspace/`). It also creates a `run.bat` (Windows) or `run.sh` (Mac/Linux) for you to double-click and run.
+
 ## Tips for Better Results
 
 - **Be specific:** "Resize all images to 800x600" is better than "make images smaller"
