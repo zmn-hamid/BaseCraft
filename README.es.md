@@ -11,7 +11,7 @@ BaseCraft es un proyecto inicial que te ayuda a crear pequeñas herramientas de 
 ### Paso 1: Descargar el Proyecto
 
 1. Ve a la página de GitHub del proyecto
-2. Haz clic en el botón verde "Code"
+2. Haz clic en el botón verde "<> Code"
 3. Haz clic en "Download ZIP"
 4. Extrae el archivo ZIP en un lugar fácil de encontrar (como tu Escritorio)
 
@@ -19,7 +19,7 @@ BaseCraft es un proyecto inicial que te ayuda a crear pequeñas herramientas de 
 
 **Windows:**
 1. Abre la carpeta `BaseCraft`
-2. Haz doble clic en `install.ps1`
+2. Haz clic derecho en `install.ps1` y elige "Run with PowerShell"
 3. Si Windows pregunta "¿Deseas ejecutar este script?", haz clic en "Open" o "Run anyway"
 4. Espera a que termine
 
@@ -70,17 +70,11 @@ Digamos que tienes 100 fotos y quieres combinarlas en una sola imagen de cuadrí
 
 ---
 
-## Ejecutando Tus Scripts
+## Ejecutando Tus Scripts (Programa)
 
 Una vez que la IA escribe un script para ti, crea un script "ejecutar" simple en la carpeta principal.
 
 Solo haz doble clic en ese script para ejecutarlo. Eso es todo.
-
-Si quieres ejecutar un script manualmente, abre Terminal en la carpeta BaseCraft y escribe:
-
-```
-uv run python your_script.py
-```
 
 ---
 
@@ -97,6 +91,8 @@ BaseCraft/
 ├── os.txt              # Tu sistema operativo (crea esto)
 └── README.md           # Este archivo
 ```
+
+Si tus archivos están en otro lugar, necesitas decirle específicamente a la IA que busque allí.
 
 ---
 

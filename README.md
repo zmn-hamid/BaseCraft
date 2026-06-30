@@ -11,7 +11,7 @@ BaseCraft is a starter project that helps you create small automation tools usin
 ### Step 1: Download the Project
 
 1. Go to the project's GitHub page
-2. Click the green "Code" button
+2. Click the green "<> Code" button
 3. Click "Download ZIP"
 4. Extract the ZIP file to somewhere easy to find (like your Desktop)
 
@@ -19,7 +19,7 @@ BaseCraft is a starter project that helps you create small automation tools usin
 
 **Windows:**
 1. Open the `BaseCraft` folder
-2. Double-click `install.ps1`
+2. Right click on `install.ps1` and choose "Run with PowerShell"
 3. If Windows asks "Do you want to run this script?", click "Open" or "Run anyway"
 4. Wait for it to finish
 
@@ -30,7 +30,7 @@ BaseCraft is a starter project that helps you create small automation tools usin
 4. Type `bash install.sh` and press Enter
 5. Wait for it to finish
 
-This installs Python and everything else you need. You only do this once.
+This installs the Python language and everything else you need. You only do this once.
 
 ### Step 3: Tell AI Your Operating System
 
@@ -70,17 +70,11 @@ Let's say you have 100 photos and want to combine them into a single grid image.
 
 ---
 
-## Running Your Scripts
+## Running Your Scripts (Program)
 
 When AI writes a script for you, it will also create a simple "run" script in the main folder.
 
 Just double-click that script to run it. That's it.
-
-If you want to run a script manually, open Terminal in the BaseCraft folder and type:
-
-```
-uv run python your_script.py
-```
 
 ---
 
@@ -97,6 +91,8 @@ BaseCraft/
 ├── os.txt              # Your operating system (create this)
 └── README.md           # This file
 ```
+
+If your files are somewhere else, you need to specifically tell ai to look up there.
 
 ---
 
