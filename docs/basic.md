@@ -2,8 +2,6 @@
 
 This guide takes you from zero to your first automated task.
 
----
-
 ## What is a Terminal?
 
 A terminal is a text-based way to control your computer. You type commands instead of clicking buttons. You need it to install BaseCraft and run some tasks.
@@ -18,7 +16,7 @@ A terminal is a text-based way to control your computer. You type commands inste
 
 When this guide says "open terminal and type something," this is what it means.
 
----
+> For Windows you can use `PowerShell` instead. You can open both of them by searching too.
 
 ## Show File Extensions
 
@@ -31,25 +29,19 @@ You need to see file extensions (like `.py`, `.txt`) so you can save files corre
 | **Mac** | Open Finder → "Finder" in menu bar → "Settings" → "Advanced" → check "Show all filename extensions" |
 | **Linux** | Open your file manager → press `Ctrl+L` or click the address bar → enable "Show Hidden Files" |
 
----
-
 ## Text Editor
 
-When AI gives you code to save, you need a text editor.
+When an AI chatbot gives you code to save, you need a text editor.
 
 - **Basic:** Notepad (already on your computer). Right-click the file → "Open with" → "Notepad"
-- **Better:** [Notepad++](https://notepad-plus-plus.org) (free, see code colors, open multiple files in tabs)
-
----
+- **Better:** [Notepad++](https://notepad-plus-plus.org) (free, open multiple files in tabs, more readable)
 
 ## Step 1: Download
 
 1. Click the green `<> Code` button at the top of this page
 2. Click "Download ZIP"
-3. Extract the ZIP to your Desktop
+3. Extract the ZIP to your Desktop (or anywhere else)
 4. You now have a `BaseCraft` folder
-
----
 
 ## Step 2: Install
 
@@ -60,27 +52,12 @@ When AI gives you code to save, you need a text editor.
 
 **Mac/Linux:**
 1. Open terminal (see above)
-2. Type `cd ` then drag the `BaseCraft` folder into the terminal window
+2. Type `cd ` (notice the space afterwards) then drag the `BaseCraft` folder into the terminal window
 3. Press Enter
 4. Type `bash install.sh` and press Enter
 5. Wait for it to finish
 
----
-
-## Step 3: os.txt
-
-During installation, `os.txt` was created automatically with your operating system. You don't need to do anything here.
-
-If you need to change it (for example, if it detected the wrong OS):
-
-1. Open the `BaseCraft` folder
-2. Open `os.txt` in Notepad
-3. Type exactly: `windows` (or `linux` or `mac`)
-4. Save and close
-
----
-
-## Step 4: Upload to AI Chat
+## Step 3: Upload to AI Chat
 
 1. Open an AI chatbot (ChatGPT, Gemini, Claude, or similar)
 2. Upload these two files:
@@ -89,8 +66,6 @@ If you need to change it (for example, if it detected the wrong OS):
 3. Tell AI what you want to automate
 
 **That's it!** AI will guide you step by step.
-
----
 
 ## Your Workspace
 
@@ -104,7 +79,20 @@ BaseCraft/
 └── README.md           # This file
 ```
 
----
+## Tips for Better Results
+
+- **Be specific:** "Resize all images to 800x600" is better than "make images smaller"
+- **Mention file types:** Tell AI if files are JPG, PNG, CSV, etc.
+- **Describe the output:** What should the result look like?
+
+## Examples
+
+| Task | What You Tell AI |
+|------|------------------|
+| **Image Grid** | "Combine all images in workspace into a grid" |
+| **File Organizer** | "Sort files by type: images to 'images', documents to 'docs'" |
+| **CSV Processor** | "Read this CSV and calculate the average of column B" |
+| **Batch Renamer** | "Rename all files to include today's date" |
 
 ## Getting Help
 
