@@ -10,6 +10,8 @@ Instructions for AI agents helping users with BaseCraft.
 
 **CONSIDER THE USER AN IDIOT BY DEFAULT.** They are a non-programmer. They know how to use a computer (files, folders, copy/paste) but don't know programming. Never assume they know anything. Always explain every step fully.
 
+**ALWAYS CHECK:** Does the code import a package? If yes, tell user to install it FIRST. This is the most common mistake.
+
 Every instruction you give must be:
 
 - **One step at a time**
@@ -67,8 +69,8 @@ When you can't access files, follow these rules:
 
 1. **Always provide complete code** — no fragments, no "add this to your file"
 2. **Always provide the exact save path** — every "Save as" line MUST say where: "(inside the BaseCraft folder)"
-3. **Always provide the run script** — user must create both the code file AND the run script
-4. **Always tell them how to run it** — double-click the run script
+3. **Always provide package installation** — if code needs packages, include install steps BEFORE the run step
+4. **Always tell them how to run it** — "Double-click run.bat to run it"
 
 ### Clarification
 
@@ -93,20 +95,15 @@ Wait for the user's reply, THEN write the code. Wrong code wastes the user's tim
 
 Every task must include ALL of these steps. Never skip any step. NEVER say "Save as: main.py" without the location. ALWAYS include "(inside the BaseCraft folder)".
 
+**IMPORTANT: run.bat (Windows) and run.sh (Mac/Linux) already exist in the project.** You do NOT need to tell the user to create them. Just say "Double-click run.bat to run it".
+
 **Windows:**
 ```
 1. Open Notepad
 2. Paste this code:
 [code here]
 3. Save as: main.py (inside the BaseCraft folder)
-
-4. Open Notepad again
-5. Paste this:
-@echo off
-uv run python main.py
-6. Save as: run.bat (inside the BaseCraft folder)
-
-7. Double-click run.bat to run it
+4. Double-click run.bat to run it
 ```
 
 **Mac/Linux:**
@@ -115,14 +112,7 @@ uv run python main.py
 2. Paste this code:
 [code here]
 3. Save as: main.py (inside the BaseCraft folder)
-
-4. Open TextEdit again
-5. Paste this:
-#!/bin/bash
-uv run python main.py
-6. Save as: run.sh (inside the BaseCraft folder)
-
-7. Double-click run.sh to run it
+4. Double-click run.sh to run it
 ```
 
 ### Extra Files
@@ -156,7 +146,15 @@ Copy everything it shows and send it to me.
 
 ### Package Installation
 
-If your code needs a package (like `pillow` for images), create a batch file for the user to double-click:
+**THIS IS THE #1 MISTAKE AGENTS MAKE. DO NOT SKIP THIS.**
+
+If your code imports ANY package (like `from PIL import Image` or `import requests`), you MUST tell the user to install it FIRST. The code will CRASH without it. ALWAYS include this BEFORE the run step.
+
+Common packages that need installation:
+- `pillow` → when code uses `from PIL import Image`
+- `requests` → when code uses `import requests`
+- `pandas` → when code uses `import pandas`
+- `openpyxl` → when code uses `import openpyxl`
 
 **Windows:**
 ```
@@ -174,6 +172,8 @@ uv add pillow
 2. Type: uv add pillow
 3. Press Enter
 ```
+
+**RULE: If you import it, you MUST install it. No exceptions.**
 
 ---
 
@@ -200,19 +200,7 @@ If you can't run it directly, ask the user:
 
 ### Run Scripts
 
-After writing `main.py`, ALWAYS create a run script for the user's platform. NEVER assume run.bat or run.sh already exists.
-
-**Windows (`run.bat`):**
-```bat
-@echo off
-uv run python main.py
-```
-
-**Mac/Linux (`run.sh`):**
-```bash
-#!/bin/bash
-uv run python main.py
-```
+`run.bat` (Windows) and `run.sh` (Mac/Linux) already exist in the project root and point to `main.py`. After writing `main.py`, you do NOT need to create run scripts — just use the existing ones.
 
 Tell the user to double-click the run script. If you have access and it's safe, run it automatically.
 
@@ -255,21 +243,21 @@ Tell the user to double-click the run script. If you have access and it's safe, 
 
 1. Ask: "How many images? What grid size (like 3x3)?"
 2. Provide complete code
-3. Provide run script
+3. Provide package installation (if needed)
 4. Tell user where to save and how to run
 
 ### "Rename files"
 
 1. Ask: "What pattern? (date, sequential, custom?)"
 2. Provide complete code
-3. Provide run script
+3. Provide package installation (if needed)
 4. Tell user where to save and how to run
 
 ### "Process CSV"
 
 1. Ask: "What calculations? What output?"
 2. Provide complete code
-3. Provide run script
+3. Provide package installation (if needed)
 4. Tell user where to save and how to run
 
 ---
@@ -306,6 +294,8 @@ When updating Farsi (or any RTL language) docs:
 ```
 BaseCraft/
 ├── workspace/          # User's files go here
+├── run.bat             # Windows: double-click to run main.py
+├── run.sh              # Mac/Linux: double-click to run main.py
 ├── validate.bat        # Agent runs this (Windows)
 ├── validate.sh         # Agent runs this (Mac/Linux)
 ├── os.txt              # User's OS
@@ -313,7 +303,7 @@ BaseCraft/
 └── README.md           # User guide
 ```
 
-Note: `run.bat` / `run.sh` are created per-task by the agent. They do NOT exist in the project by default.
+Note: `run.bat` / `run.sh` already exist and point to `main.py`. You do NOT need to create them.
 
 When creating tasks, place Python scripts at the project root as `main.py`.
 
@@ -323,6 +313,6 @@ When creating tasks, place Python scripts at the project root as `main.py`.
 
 | Action | Chatbot Mode | Agent Mode |
 |--------|--------------|------------|
-| Run script | Tell user to create run.bat then double-click it | Create run.bat, then run it or tell user to double-click |
+| Run script | Tell user to double-click run.bat (already exists) | Run it directly or tell user to double-click |
 | Add package | Tell user: `uv add package` | Run `uv add package` |
 | Validate | N/A | Run `.\validate.bat` or `./validate.sh` |
