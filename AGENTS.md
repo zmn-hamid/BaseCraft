@@ -4,152 +4,207 @@ Instructions for AI agents helping users with BaseCraft.
 
 ---
 
-## Who Is the User
+## The Golden Rule
 
-The user is someone who:
-- Has **zero programming knowledge**
-- Knows how to use a computer (files, folders, copy/paste)
-- Wants to automate daily tasks but doesn't know how
-- May not know what "terminal", "command line", or "script" means
-- May feel intimidated by technical jargon
+**Be short. Be clear. Never confuse the user with too much text.**
 
-**Your job:** Make them successful without requiring them to learn programming.
+The user is a non-programmer. They know how to use a computer (files, folders, copy/paste) but don't know programming. Every instruction you give must be:
 
----
-
-## What Is BaseCraft
-
-BaseCraft is a starter project that:
-- Provides a pre-configured Python environment
-- Includes validation tools (pyrefly, ruff) to catch errors early
-- Gives users a workspace to create automation scripts
-- Works with AI to generate code from natural language descriptions
-
-The project lives in a folder the user downloaded. It contains:
-- `pyproject.toml` — project configuration (don't modify unless asked)
-- `scripts/` — helper scripts for validation and running code
-- `workspace/` — where users put files they want to process
-- `os.txt` — user's operating system (create if missing)
+- **One step at a time**
+- **Exact copy-paste ready**
+- **No jargon** — say "folder" not "directory", "run" not "execute"
+- **Minimal text** — if you can say it in 2 lines, don't write 5
 
 ---
 
-## How to Use This Project
+## Two Modes of Operation
 
-### Detecting the User's OS
+You are either running in an **online chatbot** or an **agent tool**. Detect which one:
 
-Before running platform-specific commands, check if `os.txt` exists in the project root. If it does, read it to know the user's OS (windows, linux, or mac). If it doesn't exist, ask the user to create it.
+### Online Chatbot Mode
 
-### For the Agent
+You are running in ChatGPT, Gemini, Claude web, or similar. You CANNOT access the user's files directly.
 
-When helping a user:
+**How to detect:** You don't have file system access. You can't read/write files.
 
-1. **Always validate after changes** — run the appropriate validation script:
-   - Windows: `.\scripts\validate.ps1`
-   - Mac/Linux: `./scripts/validate.sh`
-   
-2. **Create scripts in the project root** — not in subfolders unless the user asks
+**What to do:**
+1. Give the user code to copy-paste
+2. Tell them exactly where to save it (relative path from BaseCraft folder)
+3. Tell them how to run it
 
-3. **Create a run script for the user** — after writing a Python script, create a simple run script in the root:
-   - Windows: `run_task.ps1` that calls `.\scripts\run.ps1 my_script.py`
-   - Mac/Linux: `run_task.sh` that calls `./scripts/run.sh my_script.py`
-   
-4. **Test before declaring success** — run the script and verify it works
+**Example instruction to user:**
+```
+1. Open Notepad
+2. Paste this code:
+[code here]
+3. Save as: workspace\script.py (inside the BaseCraft folder)
+4. Double-click run.bat to run it
+```
 
-### For the User
+### Agent Tool Mode
 
-Tell the user:
-- Put your files in the `workspace/` folder
-- Ask me what you want to automate
-- I'll write the code and create a script for you to run
+You are running in MimoCode, Cursor, Claude Code, or similar. You CAN access files directly.
+
+**How to detect:** You have file system access (can read/write files).
+
+**What to do:**
+1. Write files directly
+2. Run validation scripts
+3. Create run scripts
 
 ---
 
-## Rules for Helping Non-Programmers
+## Detecting the User's OS
 
-### Language Rules
+Check if `os.txt` exists in the project root. Read it to know the OS:
+- `windows` → Windows commands
+- `linux` → Linux commands
+- `mac` → Mac commands
 
-| Do | Don't |
-|----|-------|
-| Say "run this command" | Say "execute the binary" |
-| Say "folder" | Say "directory" |
-| Say "type this" | Say "input the following" |
-| Say "open the program" | Say "launch the application" |
+If `os.txt` doesn't exist, ask the user to create it.
 
-### Communication Rules
+---
 
-1. **One step at a time** — don't give multiple commands at once
-2. **Explain what will happen** — before running any command, say what it does
-3. **Show the result** — after running something, show what happened
-4. **Celebrate small wins** — "Great, that worked!" goes a long way
-5. **Never assume knowledge** — if you say "install Python", explain how
+## Rules for Online Chatbot Mode
 
-### Interface Rules
+When you can't access files, follow these rules:
 
-When you need the user to do something:
+### Code Delivery
 
-- **Give exact commands** — copy-paste ready
-- **Show where to paste** — "Open Terminal, then paste this:"
-- **Explain the outcome** — "After you run this, you'll see..."
-- **Offer alternatives** — "If that didn't work, try this instead..."
+1. **Always provide complete code** — no fragments, no "add this to your file"
+2. **Always provide the relative save path** — from BaseCraft folder
+3. **Always tell them how to run it** — double-click this file, or type this command
 
-### Error Handling Rules
+### Path Format (Relative to BaseCraft folder)
 
-When something goes wrong:
+**Windows:**
+```
+workspace\script.py
+```
 
-1. **Don't blame the user** — say "Let me help fix this"
-2. **Explain the error simply** — "This means Python couldn't find the file"
-3. **Give a clear fix** — "Let's try this instead..."
-4. **Verify the fix worked** — run it again and show success
+**Mac/Linux:**
+```
+workspace/script.py
+```
+
+### Run Instructions
+
+**Windows:**
+```
+Double-click run.bat in the BaseCraft folder
+```
+
+**Mac/Linux:**
+```
+Open Terminal in BaseCraft folder, type:
+uv run python workspace/script.py
+```
+
+### Package Installation
+
+If your code needs a package (like `pillow` for images), tell user:
+```
+Open Terminal in BaseCraft folder, type:
+uv add pillow
+```
+
+---
+
+## Rules for Agent Tool Mode
+
+When you have file access, follow these rules:
+
+### Validation
+
+Always run validation after writing code:
+- Windows: `scripts\validate.bat`
+- Mac/Linux: `./scripts/validate.sh`
+
+### File Placement
+
+- Python scripts → `workspace/` folder
+- User files → `workspace/`
+- Run scripts → project root
+
+### Run Scripts
+
+After writing a Python script, create a run script:
+
+**Windows (`run.bat`):**
+```bat
+@echo off
+uv run python workspace\script_name.py
+```
+
+**Mac/Linux (`run_task.sh`):**
+```bash
+#!/bin/bash
+uv run python workspace/script_name.py
+```
+
+---
+
+## Communication Rules
+
+### What to Say
+
+| Situation | What to Say |
+|-----------|-------------|
+| Starting | "What do you want to automate?" |
+| Need info | "How many images? What size?" |
+| Giving code | "Copy this code and save it as [relative path]" |
+| Done | "Double-click run.bat to run it" |
+| Error | "Let me fix this" |
+
+### What NOT to Say
+
+| Don't Say | Say Instead |
+|-----------|-------------|
+| "Execute the binary" | "Run this file" |
+| "Directory" | "Folder" |
+| "Input the following" | "Type this" |
+| "Install the dependency" | "Run this command" |
+| Long paragraphs | Short sentences |
+
+### Text Length Rules
+
+- **Instructions:** 1-3 lines max
+- **Explanations:** 1-2 sentences
+- **Error fixes:** Step-by-step, one step per line
+- **Never:** Walls of text, multiple paragraphs, technical deep dives
 
 ---
 
 ## Common Tasks
 
-Here are typical requests you'll get and how to handle them:
+### "Combine images into a grid"
 
-### "I want to combine images into a grid"
+1. Ask: "How many images? What grid size (like 3x3)?"
+2. Provide complete code
+3. Tell user where to save and how to run
 
-1. Ask: How many images? What size grid?
-2. Create a script using PIL/Pillow
-3. Tell user: "Put your images in the `workspace/` folder"
-4. Create `run_grid.ps1` or `run_grid.sh` that calls the runner
-5. Tell user: "Double-click `run_grid.ps1` to run it"
+### "Rename files"
 
-### "I want to rename a bunch of files"
+1. Ask: "What pattern? (date, sequential, custom?)"
+2. Provide complete code
+3. Tell user where to save and how to run
 
-1. Ask: What pattern? (date, sequential, custom?)
-2. Create a script using os/pathlib
-3. Tell user: "Put the files in `workspace/`"
-4. Create `run_rename.ps1` or `run_rename.sh` that calls the runner
-5. Tell user: "Double-click `run_rename.ps1` to run it"
+### "Process CSV"
 
-### "I want to process a CSV file"
-
-1. Ask: What calculations? What output format?
-2. Create a script using csv/pandas
-3. Tell user: "Put the CSV in `workspace/`"
-4. Create `run_process.ps1` or `run_process.sh` that calls the runner
-5. Tell user: "Double-click `run_process.ps1` to run it"
+1. Ask: "What calculations? What output?"
+2. Provide complete code
+3. Tell user where to save and how to run
 
 ---
 
-## Validation
+## Error Handling
 
-Always run validation after writing or modifying Python code:
+When something goes wrong:
 
-```bash
-# Windows
-.\scripts\validate.ps1
-
-# Mac/Linux
-./scripts/validate.sh
-```
-
-This checks:
-- **pyrefly** — type correctness (catches errors before runtime)
-- **ruff** — code style (keeps code clean and readable)
-
-If validation fails, fix the issues before telling the user everything is ready.
+1. **Don't blame** — say "Let me fix this"
+2. **Explain simply** — "This means Python couldn't find the file"
+3. **Give exact fix** — "Run this command: ..."
+4. **Verify** — "Try running it again"
 
 ---
 
@@ -157,29 +212,19 @@ If validation fails, fix the issues before telling the user everything is ready.
 
 ```
 BaseCraft/
-├── scripts/
-│   ├── validate.ps1    # Windows validation
-│   ├── validate.sh     # Mac/Linux validation
-│   ├── run.ps1         # Windows script runner
-│   └── run.sh          # Mac/Linux script runner
-├── workspace/          # User's working files
-├── install.ps1         # Windows installer
-├── install.sh          # Mac/Linux installer
-├── os.txt              # User's operating system
-├── pyproject.toml      # Project config (don't modify)
-├── README.md           # User guide
-├── README.fa.md        # Persian translation
-├── README.es.md        # Spanish translation
-└── AGENTS.md           # This file
+├── workspace/          # User's files go here
+├── scripts/            # Don't touch
+├── os.txt              # User's OS
+├── pyproject.toml      # Don't modify
+└── README.md           # User guide
 ```
 
 ---
 
 ## Quick Reference
 
-| Action | Command |
-|--------|---------|
-| Install dependencies | `uv sync` |
-| Run a script | `uv run python script.py` or use `scripts/run.ps1`/`run.sh` |
-| Validate code | `.\scripts\validate.ps1` (Windows) or `./scripts/validate.sh` (Mac/Linux) |
-| Add a package | `uv add package-name` |
+| Action | Chatbot Mode | Agent Mode |
+|--------|--------------|------------|
+| Run script | Tell user to double-click run.bat | Run directly |
+| Add package | Tell user: `uv add package` | Run `uv add package` |
+| Validate | N/A | Run `scripts\validate.bat` or `./scripts/validate.sh` |

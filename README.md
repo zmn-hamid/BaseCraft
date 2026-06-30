@@ -1,107 +1,158 @@
 # BaseCraft
 
-**Turn your daily repetitive tasks into simple scripts — no programming knowledge required.**
+**Tired of doing the same thing over and over? Let AI do it for you.**
 
-BaseCraft is a starter project that helps you create small automation tools using AI. You describe what you want in plain English, and AI writes the code for you.
+You don't need to know programming. You don't need to learn code. Just tell AI what you want in plain English, and it writes the script for you. Then you double-click to run it. That's it.
+
+BaseCraft gives you everything you need to get started — just download, install, and start automating.
 
 ---
 
-## Getting Started (2 Minutes)
+## Quick Start (2 Minutes)
 
-### Step 1: Download the Project
+### 1. Download
 
-1. Go to the project's GitHub page
-2. Click the green "<> Code" button
-3. Click "Download ZIP"
-4. Extract the ZIP file to somewhere easy to find (like your Desktop)
+1. Click the green `<> Code` button
+2. Click "Download ZIP"
+3. Extract to your Desktop
 
-### Step 2: Install Everything
+### 2. Install
 
 **Windows:**
 1. Open the `BaseCraft` folder
-2. Right click on `install.ps1` and choose "Run with PowerShell"
-3. If Windows asks "Do you want to run this script?", click "Open" or "Run anyway"
-4. Wait for it to finish
+2. Double-click `install.bat`
+3. Wait for it to finish
 
 **Mac/Linux:**
 1. Open Terminal
-2. Type `cd ` then drag the `BaseCraft` folder into Terminal (this types the path for you)
+2. Type `cd ` then drag the `BaseCraft` folder into Terminal
 3. Press Enter
 4. Type `bash install.sh` and press Enter
-5. Wait for it to finish
 
-This installs the Python language and everything else you need. You only do this once.
-
-### Step 3: Tell AI Your Operating System
-
-AI needs to know your operating system to help you properly.
+### 3. Create os.txt
 
 1. Open the `BaseCraft` folder
-2. Create a new text file called `os.txt`
-3. Write one of these inside: `windows`, `linux`, or `mac`
-4. Save the file
+2. Create a new file called `os.txt`
+3. Write `windows`, `linux`, or `mac` inside
+4. Save it
 
-That's it. You're ready to start!
+### 4. Upload to AI Chat
+
+1. Open an AI chatbot (like ChatGPT, Gemini, or Claude)
+2. Upload these two files:
+   - `AGENTS.md`
+   - `os.txt`
+3. Tell AI what you want to automate
+
+**That's it!** AI will guide you step by step.
 
 ---
 
 ## How It Works
 
-1. **You tell AI what you want** — in plain English
-2. **AI writes the code** — saves it in your project
-3. **You run it** — your task is automated!
+```
+You tell AI what you want
+        ↓
+AI writes the code
+        ↓
+You save the file
+        ↓
+You run it
+        ↓
+Task done!
+```
 
-### Example: Combining Images into a Grid
+### Example
 
-Let's say you have 100 photos and want to combine them into a single grid image.
+**You say:** "I have 100 photos. Combine them into a 10x10 grid."
 
-**What you tell AI:**
+**AI does:**
+- Writes the code
+- Tells you exactly what to save and where
 
-> "I have 100 JPG images in a folder called 'photos'. I want to combine them into a 10x10 grid image. Save the result as 'grid.jpg'."
-
-**What AI does:**
-- Writes a Python script for you
-- Creates a simple script to run it
-
-**What you do next:**
-- Put your photos in the `workspace` folder
-- Run the script AI created
+**You do:**
+- Copy the code into a file
+- Double-click to run
 - Get your grid image!
 
 ---
 
-## Running Your Scripts (Program)
+## Before You Start: Three Important Settings
 
-When AI writes a script for you, it will also create a simple "run" script in the main folder.
+### 1. Show File Extensions
 
-Just double-click that script to run it. That's it.
+You need to see file extensions (like `.py`, `.txt`) to edit files correctly.
+
+**Windows 11:**
+1. Open any folder
+2. Click "View" at the top
+3. Click "Show"
+4. Check "File name extensions"
+
+**Windows 10:**
+1. Open any folder
+2. Click "View" at the top
+3. Check "File name extensions"
+
+**Mac:**
+1. Open Finder
+2. Click "Finder" in the menu bar → "Settings"
+3. Click "Advanced"
+4. Check "Show all filename extensions"
+
+**Linux:**
+1. Open your file manager
+2. Press `Ctrl+L` or click the address bar
+3. Look for "Show Hidden Files" and enable it
+
+### 2. Edit Files with Notepad
+
+When AI gives you code to save, you need a text editor.
+
+**Basic option:** Use Notepad (already on your computer)
+- Right-click the file → "Open with" → "Notepad"
+
+**Better option:** Install Notepad++ (free, multi-tab)
+- Download from: https://notepad-plus-plus.org
+- Open multiple files in tabs
+- See code colors clearly
+
+### 3. Open Terminal
+
+Terminal is a text-based way to control your computer. You need it to run commands.
+
+**Windows:**
+1. Press `Windows key + R`
+2. Type `cmd` and press Enter
+3. A black window opens — that's your terminal
+
+**Mac:**
+1. Press `Cmd + Space`
+2. Type `Terminal` and press Enter
+
+**Linux:**
+1. Press `Ctrl + Alt + T`
 
 ---
 
 ## Your Workspace
 
-The `workspace` folder is where you put your files for AI to work with.
+The `workspace/` folder is where you put your files for AI to process.
 
 ```
 BaseCraft/
 ├── workspace/          # Put your files here
-├── scripts/            # Helper scripts (don't touch)
-├── install.ps1         # Windows installer
-├── install.sh          # Mac/Linux installer
-├── os.txt              # Your operating system (create this)
+├── scripts/            # Don't touch this
+├── os.txt              # Your operating system
 └── README.md           # This file
 ```
 
-If your files are somewhere else, you need to specifically tell ai to look up there.
-
 ---
 
-## Real-World Examples
+## Examples
 
-Here are some things you can automate with BaseCraft:
-
-| Task | What You Ask AI |
-|------|-----------------|
+| Task | What You Tell AI |
+|------|------------------|
 | **Image Grid** | "Combine all images in workspace into a grid" |
 | **File Organizer** | "Sort files by type: images to 'images', documents to 'docs'" |
 | **CSV Processor** | "Read this CSV and calculate the average of column B" |
@@ -109,40 +160,54 @@ Here are some things you can automate with BaseCraft:
 
 ---
 
-## Tips for Talking to AI
+## Tips
 
-The better you describe what you want, the better the result.
+- **Be specific**: "Resize all images to 800x600" is better than "make images smaller"
+- **Mention file types**: Tell AI if files are JPG, PNG, CSV, etc.
+- **Describe the output**: What should the result look like?
 
-- **Be specific**: "Resize all images to 800x600 pixels" is better than "make images smaller"
-- **Mention file types**: Tell AI what format your files are (JPG, PNG, CSV, etc.)
-- **Describe the output**: What should the result look like? Where should it be saved?
+---
+
+## Going Further: Agent Tools
+
+If you want more power and automation, you can set up **agent tools** that let AI directly work with your files — no copy-paste needed.
+
+### Free Agent Tools
+
+| Tool | What It Does | Cost |
+|------|--------------|------|
+| **MimoCode** | AI coding assistant (VS Code extension) | Free tier available |
+| **Cursor** | AI-powered code editor | Free tier available |
+| **Claude Code** | Anthropic's CLI agent | Free with API key |
+
+### How to Set Up
+
+**Step 1:** Open terminal (see "Open Terminal" above)
+
+**Step 2:** Follow the tool's official installation instructions
+
+**Step 3:** Tell AI to use it:
+> "I have [tool name] set up. Please write the code directly to my files."
+
+### Learn More
+
+These Telegram channels teach AI tools and automation in Persian:
+- [t.me/MatinSenPaii](https://t.me/MatinSenPaii)
+- [t.me/appxa](https://t.me/appxa)
 
 ---
 
 ## Getting Help
 
-If something doesn't work:
+If something goes wrong:
 
-1. **Check the error message** — AI can help you fix it if you share the error
-2. **Ask AI again** — paste the error and say "I got this error, how do I fix it?"
-
----
-
-## What's Next?
-
-Once you're comfortable with the basics, you can:
-
-- Create more complex automations
-- Combine multiple scripts
-- Build small applications
-
-The possibilities are endless — and you don't need to learn programming to make them happen.
+1. **Copy the error message** and send it to AI
+2. **Ask AI again**: "I got this error, how do I fix it?"
+3. **Check your files** — make sure they're in the right place
 
 ---
 
 ## Translations
-
-This README is available in other languages:
 
 - [Persian (فارسی)](README.fa.md)
 - [Spanish (Español)](README.es.md)
