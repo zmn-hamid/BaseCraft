@@ -6,7 +6,7 @@
 
 *فقط به AI بگویید چه می‌خواهید — کد را می‌نویسد، شما اجرا می‌کنید.*
 
-<a href="../README.md"><span style="background:#14ab87;color:#000;padding:4px 8px;border-radius:3px;font-weight:600">English</span></a> · <a href="README.es.md"><span style="background:#b3621c;color:#000;padding:4px 8px;border-radius:3px;font-weight:600">Español</span></a>
+[English](../README.md) · [Español](README.es.md)
 
 </div>
 
