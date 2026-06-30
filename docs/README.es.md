@@ -6,8 +6,7 @@
 
 *Solo dile a la IA qué quieres — ella escribe el código, tú lo ejecutas.*
 
-[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](../README.md)
-[![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
+<a href="../README.md"><span style="background:#14ab87;color:#000;padding:4px 8px;border-radius:3px;font-weight:600">English</span></a> · <a href="README.fa.md"><span style="background:#cc9d11;color:#000;padding:4px 8px;border-radius:3px;font-weight:600">فارسی</span></a>
 
 </div>
 

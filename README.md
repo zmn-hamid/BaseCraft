@@ -6,8 +6,7 @@
 
 *Just tell AI what you want — it writes the code, you run it.*
 
-[![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](docs/README.fa.md)
-[![Español](https://img.shields.io/badge/Español-FF6600?style=flat-square)](docs/README.es.md)
+<a href="docs/README.fa.md"><span style="background:#cc9d11;color:#000;padding:4px 8px;border-radius:3px;font-weight:600">فارسی</span></a> · <a href="docs/README.es.md"><span style="background:#b3621c;color:#000;padding:4px 8px;border-radius:3px;font-weight:600">Español</span></a>
 
 </div>
 
