@@ -12,15 +12,15 @@
 
 ---
 
-BaseCraft is **not** an AI tool. It doesn't compete with Hermes, OpenClaw or anything else. It's a starter project which provides two facilities: helping non-developers vibe-code their basic tasks more **easily** and **reliably**. It has a good foundation for LLMs to understand user input and develop code and programs that are more reliably bug-free. Though, to target average users, I have created a small but thorough tutorial on how to work with this project.
+BaseCraft is **not** an AI tool. It doesn't compete with Hermes, OpenClaw, or anything else. It's a starter project that provides two facilities: helping non-developers vibe-code their basic tasks more **easily** and **reliably**. It has a good foundation for LLMs to understand user input and develop code and programs that are more reliably bug-free. However, to target average users, I have created a small but thorough tutorial on how to work with this project.
 
 Yes, you can build complex stuff with it too — though that's not what this project aims for.
 
 ## Prerequisites
 
 - A laptop or PC
-- Zero programming knowledge
-- The will to start automating :)
+- Knowing how to use the said laptop or PC
+- The will to start developing :)
 
 ## How It Works
 

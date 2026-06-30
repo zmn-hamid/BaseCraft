@@ -14,15 +14,15 @@
 
 El objetivo es simple: ayudar a los no programadores a automatizar tareas mundanas. No necesitas conocimientos de programación. Solo dile a la IA qué quieres, ella escribe el código, tú lo ejecutas.
 
-BaseCraft **no** es una herramienta de IA. No compite con Hermes, OpenClaw ni nada más. Es un proyecto inicial que ofrece dos facilidades: ayudar a los no desarrolladores a vibe-codear sus tareas básicas de forma más **fácil** y **confiable**. Tiene una buena base para que los LLMs comprendan la entrada del usuario y desarrollen código y programas con menos errores. Aunque, para usuarios promedio, he creado un tutorial pequeño pero completo sobre cómo trabajar con este proyecto.
+BaseCraft **no** es una herramienta de IA. No compite con Hermes, OpenClaw, ni nada más. Es un proyecto inicial que ofrece dos facilidades: ayudar a los no desarrolladores a vibe-codear sus tareas básicas de forma más **fácil** y **confiable**. Tiene una buena base para que los LLMs comprendan la entrada del usuario y desarrollen código y programas con menos errores. Sin embargo, para usuarios promedio, he creado un tutorial pequeño pero completo sobre cómo trabajar con este proyecto.
 
 Sí, también puedes construir cosas complejas con él — pero ese no es el objetivo de este proyecto.
 
 ## Prerrequisitos
 
 - Una laptop o PC
-- Cero conocimiento de programación
-- Las ganas de empezar a automatizar :)
+- Saber usar la dicha laptop o PC
+- Las ganas de empezar a desarrollar :)
 
 ## Cómo Funciona
 
