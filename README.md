@@ -1,8 +1,16 @@
 # BaseCraft
 
-**Tired of doing the same thing over and over? Let AI do it for you.**
+The goal is simple: help non-programmers automate mundane tasks. You don't need any coding knowledge. Just tell AI what you want, it writes the code, you run it.
 
-You don't need to know programming. You don't need to learn code. Just tell AI what you want in plain English, and it writes the script for you. Then you double-click to run it. That's it.
+BaseCraft is **not** an AI tool. It doesn't compete with Hermes, OpenClaw or anything else. It's a starter project which provides two facilities: helping non-developers vibe-code their basic tasks more **easily** and **reliably**. It has a good foundation for LLMs to understand user input and develop code and programs that are more reliably bug-free. Though, to target average users, I have created a small but thorough tutorial on how to work with this project.
+
+Yes, you can build complex stuff with it too — though that's not what this project aims for.
+
+## Prerequisites
+
+- A laptop or PC
+- Zero programming knowledge
+- The will to start automating :)
 
 ## How It Works
 
@@ -26,16 +34,16 @@ Task done!
 2. **Install** — Open the `BaseCraft` folder → double-click `install.bat` (or run `bash install.sh` on Mac/Linux)
 3. **Upload** — Open an AI chatbot, upload `AGENTS.md` and `os.txt`, tell AI what you want
 
-> **Important:** If this is your first time, **read the [Getting Started guide](docs/basic.md) first.** It walks you through everything step by step — how to open a terminal, how to save files, how to run scripts. Don't skip it.
+> **Important:** If this is your first time, **read the [Getting Started guide](docs/basic.md) first.** It walks you through everything step by step — how to open a terminal, how to save files, how to run scripts. Don't skip it if you don't know them.
 
-> **Want an easier experience?** The [Advanced guide](docs/advanced.md) sets up an **agent tool** — this lets AI work directly on your files. No copy-paste, no saving files manually. It takes a few extra minutes to set up, but after that every task is much simpler.
+> **Want an easier experience?** The [Advanced guide](docs/advanced.md) sets up a **coding agent** — this lets AI work directly on your files. No copy-paste, no saving files manually. It takes extra effort to set up, but after that every task is much simpler.
 
 ## Guides
 
 | Guide | For who |
 |-------|---------|
 | [Getting Started](docs/basic.md) | First-time users — terminal basics, install, first task |
-| [Advanced](docs/advanced.md) | Agent tools — easier daily use, one-time setup |
+| [Advanced](docs/advanced.md) | Coding agents — easier daily use, one-time setup |
 
 ## Translations
 

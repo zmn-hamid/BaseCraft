@@ -1,8 +1,16 @@
 # BaseCraft
 
-**¿Cansado de hacer lo mismo una y otra vez? Deja que la IA lo haga por ti.**
+El objetivo es simple: ayudar a los no programadores a automatizar tareas mundanas. No necesitas conocimientos de programación. Solo dile a la IA qué quieres, ella escribe el código, tú lo ejecutas.
 
-No necesitas saber programar. No necesitas aprender código. Solo dile a la IA qué quieres en palabras simples y ella escribirá el script por ti. Luego haz doble clic para ejecutarlo. Eso es todo.
+BaseCraft **no** es una herramienta de IA. No compite con Hermes, OpenClaw ni nada más. Es un proyecto inicial que ofrece dos facilidades: ayudar a los no desarrolladores a vibe-codear sus tareas básicas de forma más **fácil** y **confiable**. Tiene una buena base para que los LLMs comprendan la entrada del usuario y desarrollen código y programas con menos errores. Aunque, para usuarios promedio, he creado un tutorial pequeño pero completo sobre cómo trabajar con este proyecto.
+
+Sí, también puedes construir cosas complejas con él — pero ese no es el objetivo de este proyecto.
+
+## Prerrequisitos
+
+- Una laptop o PC
+- Cero conocimiento de programación
+- Las ganas de empezar a automatizar :)
 
 ## Cómo Funciona
 
@@ -26,9 +34,9 @@ Lo ejecutas
 2. **Instalar** — Abre la carpeta `BaseCraft` → haz doble clic en `install.bat` (o ejecuta `bash install.sh` en Mac/Linux)
 3. **Subir** — Abre un chatbot de IA, sube `AGENTS.md` y `os.txt`, dile a la IA qué quieres
 
-> **Importante:** Si es tu primera vez, **lee la [guía de Primeros Pasos](docs/basic.es.md) primero.** Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes.
+> **Importante:** Si es tu primera vez, **lee la [guía de Primeros Pasos](docs/basic.es.md) primero.** Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes si no los conoces.
 
-> **¿Quieres una experiencia más fácil?** La [guía Avanzada](docs/advanced.es.md) configura un **agente de codificación** — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Toma unos minutos configurarlo, pero después cada tarea es mucho más sencilla.
+> **¿Quieres una experiencia más fácil?** La [guía Avanzada](docs/advanced.es.md) configura un **agente de codificación** — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Requiere más esfuerzo configurarlo, pero después cada tarea es mucho más sencilla.
 
 ## Guías
 
