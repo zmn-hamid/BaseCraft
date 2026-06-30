@@ -44,9 +44,9 @@ Task done!
 2. **Install** — Open the `BaseCraft` folder → double-click `install.bat` (or run `bash install.sh` on Mac/Linux)
 3. **Upload** — Open an AI chatbot, upload `AGENTS.md` and `os.txt`, tell AI what you want
 
-> **Important:** If this is your first time, **read the [Getting Started guide](docs/basic.md) first.** It walks you through everything step by step — how to open a terminal, how to save files, how to run scripts. Don't skip it if you don't know them.
+**Important:** If this is your first time, read the [Getting Started guide](docs/basic.md) first. It walks you through everything step by step — how to open a terminal, how to save files, how to run scripts. Don't skip it if you don't know them.
 
-> **Want an easier experience?** The [Advanced guide](docs/advanced.md) sets up a **coding agent** — this lets AI work directly on your files. No copy-paste, no saving files manually. It takes extra effort to set up, but after that every task is much simpler.
+**Want an easier experience?** The [Advanced guide](docs/advanced.md) sets up a coding agent — this lets AI work directly on your files. No copy-paste, no saving files manually. It takes extra effort to set up, but after that every task is much simpler. **This project works best with the advanced setup, though it also works fine with the basic setup.**
 
 ## Guides
 

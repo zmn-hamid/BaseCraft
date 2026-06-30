@@ -46,9 +46,9 @@ Lo ejecutas
 2. **Instalar** — Abre la carpeta `BaseCraft` → haz doble clic en `install.bat` (o ejecuta `bash install.sh` en Mac/Linux)
 3. **Subir** — Abre un chatbot de IA, sube `AGENTS.md` y `os.txt`, dile a la IA qué quieres
 
-> **Importante:** Si es tu primera vez, **lee la [guía de Primeros Pasos](basic.es.md) primero.** Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes si no los conoces.
+**Importante:** Si es tu primera vez, lee la [guía de Primeros Pasos](basic.es.md) primero. Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes si no los conoces.
 
-> **¿Quieres una experiencia más fácil?** La [guía Avanzada](advanced.es.md) configura un **agente de codificación** — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Requiere más esfuerzo configurarlo, pero después cada tarea es mucho más sencilla.
+**¿Quieres una experiencia más fácil?** La [guía Avanzada](advanced.es.md) configura un agente de codificación — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Requiere más esfuerzo configurarlo, pero después cada tarea es mucho más sencilla. **Este proyecto funciona mejor con la configuración avanzada, aunque también funciona bien con la configuración básica.**
 
 ## Guías
 
