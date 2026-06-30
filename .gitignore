@@ -9,5 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-# temporary
-temp/
+# User workspace (keep the folder, ignore contents)
+workspace/*
+!workspace/.gitkeep
