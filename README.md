@@ -16,6 +16,9 @@ BaseCraft is **not** an AI tool. It doesn't compete with Hermes, OpenClaw, or an
 
 Yes, you can build complex stuff with it too — though that's not what this project aims for.
 
+https://github.com/user-attachments/assets/74165fec-17e3-4512-af3d-70d8b79deb1d
+*Tutorial for windows users*
+
 ## Prerequisites
 
 - A laptop or PC
