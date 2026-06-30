@@ -1,0 +1,6 @@
+/* Make ALL markdown code (blocks AND inline) use monospace */
+code {
+    font-family: "Fira Code", "Courier New", "JetBrains Mono", "Menlo", "Consolas", monospace;
+    padding-left: 5px;
+    padding-right: 5px;
+}
