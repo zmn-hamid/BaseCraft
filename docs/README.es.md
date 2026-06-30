@@ -6,7 +6,7 @@
 
 *Solo dile a la IA qué quieres — ella escribe el código, tú lo ejecutas.*
 
-[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](README.md)
+[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](../README.md)
 [![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
 
 </div>
@@ -47,16 +47,16 @@ Lo ejecutas
 2. **Instalar** — Abre la carpeta `BaseCraft` → haz doble clic en `install.bat` (o ejecuta `bash install.sh` en Mac/Linux)
 3. **Subir** — Abre un chatbot de IA, sube `AGENTS.md` y `os.txt`, dile a la IA qué quieres
 
-> **Importante:** Si es tu primera vez, **lee la [guía de Primeros Pasos](docs/basic.es.md) primero.** Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes si no los conoces.
+> **Importante:** Si es tu primera vez, **lee la [guía de Primeros Pasos](basic.es.md) primero.** Te explica todo paso a paso — cómo abrir una terminal, cómo guardar archivos, cómo ejecutar scripts. No te la saltes si no los conoces.
 
-> **¿Quieres una experiencia más fácil?** La [guía Avanzada](docs/advanced.es.md) configura un **agente de codificación** — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Requiere más esfuerzo configurarlo, pero después cada tarea es mucho más sencilla.
+> **¿Quieres una experiencia más fácil?** La [guía Avanzada](advanced.es.md) configura un **agente de codificación** — esto permite que la IA trabaje directamente en tus archivos. Sin copiar y pegar, sin guardar archivos manualmente. Requiere más esfuerzo configurarlo, pero después cada tarea es mucho más sencilla.
 
 ## Guías
 
 | Guía | Para quién |
 |------|------------|
-| [Primeros Pasos](docs/basic.es.md) | Usuarios nuevos — conceptos básicos de Terminal, instalación, primera tarea |
-| [Avanzado](docs/advanced.es.md) | Agentes de codificación — uso diario más fácil, configuración única |
+| [Primeros Pasos](basic.es.md) | Usuarios nuevos — conceptos básicos de Terminal, instalación, primera tarea |
+| [Avanzado](advanced.es.md) | Agentes de codificación — uso diario más fácil, configuración única |
 
 ## Licencia
 

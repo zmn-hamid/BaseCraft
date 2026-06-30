@@ -100,6 +100,14 @@ Open Terminal in BaseCraft folder, type:
 uv run python workspace/script.py
 ```
 
+### Asking User to Validate
+
+When you need to check code but can't run it yourself:
+```
+Double-click validate.bat in the BaseCraft folder.
+Copy everything it shows and send it to me.
+```
+
 ### Package Installation
 
 If your code needs a package (like `pillow` for images), tell user:
@@ -117,18 +125,23 @@ When you have file access, follow these rules:
 ### Validation
 
 Always run validation after writing code:
-- Windows: `scripts\validate.bat`
-- Mac/Linux: `./scripts/validate.sh`
+- Windows: `.\validate.bat`
+- Mac/Linux: `./validate.sh`
+
+If you can't run it directly, ask the user:
+1. Tell them: "Double-click `validate.bat` in the BaseCraft folder"
+2. Ask them to copy the output and send it to you
+3. The script runs ALL checks and shows full output — it won't close early
 
 ### File Placement
 
 - Python scripts → `workspace/` folder
 - User files → `workspace/`
-- Run scripts → project root
+- Run scripts → project root (create when needed)
 
 ### Run Scripts
 
-After writing a Python script, create a run script:
+After writing a Python script, create a run script for the user:
 
 **Windows (`run.bat`):**
 ```bat
@@ -136,7 +149,7 @@ After writing a Python script, create a run script:
 uv run python workspace\script_name.py
 ```
 
-**Mac/Linux (`run_task.sh`):**
+**Mac/Linux (`run.sh`):**
 ```bash
 #!/bin/bash
 uv run python workspace/script_name.py
@@ -213,7 +226,8 @@ When something goes wrong:
 ```
 BaseCraft/
 ├── workspace/          # User's files go here
-├── scripts/            # Don't touch
+├── validate.bat        # Agent runs this (Windows)
+├── validate.sh         # Agent runs this (Mac/Linux)
 ├── os.txt              # User's OS
 ├── pyproject.toml      # Don't modify
 └── README.md           # User guide
@@ -227,4 +241,4 @@ BaseCraft/
 |--------|--------------|------------|
 | Run script | Tell user to double-click run.bat | Run directly |
 | Add package | Tell user: `uv add package` | Run `uv add package` |
-| Validate | N/A | Run `scripts\validate.bat` or `./scripts/validate.sh` |
+| Validate | N/A | Run `.\validate.bat` or `./validate.sh` |

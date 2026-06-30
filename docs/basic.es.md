@@ -74,7 +74,8 @@ La carpeta `workspace/` es donde pones tus archivos para que la IA los procese.
 ```
 BaseCraft/
 ├── workspace/          # Pon tus archivos aquí
-├── scripts/            # No tocar
+├── validate.bat        # Script de validación (Windows)
+├── validate.sh         # Script de validación (Mac/Linux)
 ├── os.txt              # Tu sistema operativo
 └── README.md           # Este archivo
 ```

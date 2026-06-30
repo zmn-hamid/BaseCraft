@@ -74,7 +74,8 @@ The `workspace/` folder is where you put your files for AI to process.
 ```
 BaseCraft/
 ├── workspace/          # Put your files here
-├── scripts/            # Don't touch this
+├── validate.bat        # Validation script (Windows)
+├── validate.sh         # Validation script (Mac/Linux)
 ├── os.txt              # Your operating system
 └── README.md           # This file
 ```
