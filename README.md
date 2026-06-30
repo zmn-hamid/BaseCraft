@@ -2,11 +2,10 @@
 
 # BaseCraft
 
-**Python automation for non-programmers**
+**Easy automation for non-programmers**
 
 *Just tell AI what you want — it writes the code, you run it.*
 
-[![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](README.md)
 [![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
 [![Español](https://img.shields.io/badge/Español-FF6600?style=flat-square)](README.es.md)
 

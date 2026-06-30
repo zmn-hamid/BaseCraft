@@ -2,12 +2,11 @@
 
 # BaseCraft
 
-**اتوماسیون پایتون برای غیر برنامه‌نویسان**
+**اتوماسیون آسان برای غیر برنامه‌نویسان**
 
 *فقط به AI بگویید چه می‌خواهید — کد را می‌نویسد، شما اجرا می‌کنید.*
 
 [![English](https://img.shields.io/badge/English-232F3E?style=flat-square)](README.md)
-[![فارسی](https://img.shields.io/badge/فارسی-44CC11?style=flat-square)](README.fa.md)
 [![Español](https://img.shields.io/badge/Español-FF6600?style=flat-square)](README.es.md)
 
 </div>
